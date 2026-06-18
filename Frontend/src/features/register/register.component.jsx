@@ -21,13 +21,6 @@ const RegisterComponent = () => {
         profilePic: ''
     });
 
-    const data = new FormData();
-
-    data.append('fullName', formData.fullName);
-    data.append('email', formData.email);
-    data.append('password', formData.password);
-    data.append('profilePic', formData.profilePic);
-
     const handleChange = ((e) => {
         setFormData(prev => ({
             ...prev,
@@ -47,6 +40,13 @@ const RegisterComponent = () => {
 
         setLoading(true);
 
+        const data = new FormData();
+
+        data.append('fullName', formData.fullName);
+        data.append('email', formData.email);
+        data.append('password', formData.password);
+        data.append('profilePic', formData.profilePic);
+
         if (formData.password !== formData.confirmPassword) {
             alert('Passwords do not match');
             setLoading(false)
@@ -59,9 +59,9 @@ const RegisterComponent = () => {
                 data,
                 {
                     withCredentials: true,
-                    headers: {
-                        'Content-Type': 'multipart/form-data'
-                    }
+                    // headers: {
+                    //     'Content-Type': 'multipart/form-data'
+                    // }
                 }
             );
 
@@ -74,6 +74,8 @@ const RegisterComponent = () => {
 
             navigate('/');
         } catch (err) {
+
+            console.error("REGISTER ERROR:", err);
 
             // Network error
             if (!err.response) {
