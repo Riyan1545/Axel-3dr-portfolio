@@ -55,7 +55,7 @@ const RegisterComponent = () => {
 
         try {
             const response = await axios.post(
-                'http://localhost:3000/api/auth/user/register',
+                `${import.meta.env.VITE_API_URL}/api/auth/user/register`,
                 data,
                 {
                     withCredentials: true,

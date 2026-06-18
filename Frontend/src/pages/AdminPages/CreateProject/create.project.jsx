@@ -101,7 +101,7 @@ const CreateProject = () => {
       );
 
       const response = await axios.post(
-        'http://localhost:3000/api/project/create',
+        `${import.meta.env.VITE_API_URL}/api/project/create`,
         data,
         {
           withCredentials: true,

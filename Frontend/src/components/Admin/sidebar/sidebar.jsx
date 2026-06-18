@@ -33,7 +33,7 @@ const Sidebar = () => {
 
         try {
             await axios.get(
-                'http://localhost:3000/api/auth/user/logout',
+                `${import.meta.env.VITE_API_URL}/api/auth/user/logout`,
                 {
                     withCredentials: true
                 }

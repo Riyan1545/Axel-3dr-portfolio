@@ -4,7 +4,6 @@ import { Link, NavLink } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import "./navbar.css";
 import axios from 'axios'
-import Button1 from '../button/button1';
 import Loading from '../loading/loading';
 
 import logo from '../../../assets/icons/MainLogo.png'
@@ -35,7 +34,7 @@ const Navbar = () => {
 
         try {
             await axios.get(
-                'http://localhost:3000/api/auth/user/logout',
+                `${import.meta.env.VITE_API_URL}/api/auth/user/logout`,
                 {
                     withCredentials: true
                 }
@@ -145,8 +144,6 @@ const Navbar = () => {
                                             </div>
                                         )}
                                     </div>
-
-                                    <Button1 />
                                 </div>
                             ) : (
                                 <Link
