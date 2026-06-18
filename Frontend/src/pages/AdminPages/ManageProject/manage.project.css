@@ -1,0 +1,121 @@
+.manage-project{
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: var(--bg-primary);
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.error-load-project{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    text-align: center;
+}
+
+.manage-header{
+    width: 100%;
+    color: var(--text-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.manage-col-1 p{
+    color: var(--text-secondary);
+}
+
+.manage-col-2 a{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    background-color: var(--warning);
+    border: none;
+    border-radius: 5px;
+    padding: .4em 1em;
+    font-weight: 500;
+    color: var(--bg-primary);
+    text-decoration: none;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.manage-col-2 a:hover{
+    transform: translateY(-3px);
+}
+
+.manage-project-links{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.manage-project-links .manage-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.manage-project-container{
+    width: 100%;
+    padding: 2em 0;
+}
+
+.manage-search-input{
+    background-color: var(--bg-primary);
+    padding: .4em 1em;
+}
+
+.manage-project-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1em;
+    justify-items: center;
+}
+
+.null-create-card{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border: 1px dashed var(--warning);
+    border-radius: 5px;
+    color: var(--text-primary);
+    text-decoration: none;
+    text-align: center;
+}
+
+.null-create-card i{
+    font-size: 1.5em;
+}
+
+#manage-search-input{
+    background-color: transparent;
+    border: 1px solid var(--border-light);
+    outline: none;
+    padding: .5em 1.2em;
+    border-radius: 5px;
+    color: var(--text-primary);
+}
+
+.manage-right{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.manage-right select, option{
+    background-color: var(--bg-primary);
+}

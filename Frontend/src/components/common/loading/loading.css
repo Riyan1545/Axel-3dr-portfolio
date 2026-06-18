@@ -1,0 +1,29 @@
+.loading-page {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.loader {
+    width: 60px;
+    height: 60px;
+
+    border: 2px solid rgba(255,255,255,.1);
+    border-top: 5px solid var(--warning);
+
+    border-radius: 50%;
+
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

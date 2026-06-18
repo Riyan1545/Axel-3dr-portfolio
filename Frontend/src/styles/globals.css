@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Balloo;
+    src: url(../fonts/Baloo_2/Baloo2-VariableFont_wght.ttf);
+}
+
+
+*{
+    font-family: Balloo;
+}

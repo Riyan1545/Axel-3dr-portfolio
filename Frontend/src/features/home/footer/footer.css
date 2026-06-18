@@ -1,0 +1,67 @@
+.footer-container {
+    background-color: var(--bg-secondary);
+    width: 100%;
+    padding: 10vw;
+}
+
+.card-holder {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 1em;
+    position: relative;
+}
+
+.offer-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-primary);
+    gap: 1em;
+    text-align: center;
+}
+
+.offer-card h3{
+    font-size: clamp(.8em, 2vw, 4em);
+}
+
+.offer-card i {
+    font-size: clamp(1em, 4vw, 4em);
+}
+
+.offer-card p {
+    color: var(--text-secondary);
+    font-size: clamp(.5em, 1vw, 1em);
+}
+
+@media (max-width: 480px) {
+    .card-holder {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+    }
+
+    .card-holder::before{
+        content: '';
+        width: 100%;
+        height: 1px;
+        top: 50%;
+        left: 0;
+        background-color: var(--bg-card);
+        position: absolute;
+    }
+
+    .card-holder::after{
+        content: '';
+        width: 1px;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        background-color: var(--bg-card);
+        position: absolute;
+    }
+
+    .offer-card {
+        gap: 0em;
+    }
+}

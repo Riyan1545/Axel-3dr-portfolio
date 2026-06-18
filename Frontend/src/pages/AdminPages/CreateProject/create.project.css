@@ -1,0 +1,233 @@
+.create-dashboard{
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: var(--bg-primary);
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.create-header{
+    width: 100%;
+    color: var(--text-primary);
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-col-1 p{
+    color: var(--text-secondary);
+}
+
+.create-project-container{
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+}
+
+.create-project-container{
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+}
+
+.create-project-container form{
+    display: flex;
+    height: 100%;
+    gap: 2em;
+}
+
+.project-col{
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-secondary);
+    border: .5px solid var(--border-light);
+    border-radius: 5px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.project-input-group{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.project-input-group input, textarea, select{
+    border: 1px solid var(--border-light);
+    background-color: transparent;
+    outline: none;
+    padding: .4em .7em;
+    border-radius: 5px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    resize: none;
+}
+
+.project-input-group option{
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-light);
+    outline: none;
+    cursor: pointer;
+}
+
+.project-input-group label{
+    color: var(--text-primary);
+}
+
+.description-components{
+    color: var(--text-primary);
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+    padding: .1em .7em;
+    border: 1px solid var(--border-light);
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    position: absolute;
+    top: 1.75em;
+}
+
+.description-components i:hover{
+    background-color: var(--border-light);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.project-description{
+    position: relative;
+    margin: 1em 0;
+}
+
+small{
+    color: var(--text-secondary);
+}
+
+.project-description label{
+    margin-bottom: 1em;
+}
+
+.project-description textarea{
+    border-top: none;
+}
+
+.project-featured-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.project-featured-container p{
+    color: var(--text-primary);
+}
+
+.project-featured-container p:last-child{
+    color: var(--text-secondary);
+}
+
+.project-thumbnail-1{
+    width: 100%;
+    border: 1px dashed var(--border-light);
+    padding: 1em;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+}
+
+.project-thumbnail-1 i{
+    font-size: 2em;
+    color: var(--text-primary);
+}
+
+.project-thumbnail-1 input{
+    margin: 0 auto;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    opacity: 0;
+}
+
+.project-thumbnail-1 p{
+    color: var(--text-primary);
+}
+
+.browse-container{
+    position: relative;
+    width: 100px;
+    height: 30px;
+    border: 1px solid var(--warning);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#file-selector{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-align: center;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+.browse-container:hover{
+    background-color: var(--warning);
+    color: var(--text-secondary);
+}
+
+#thumbnail-label{
+    color: var(--text-primary);
+}
+
+.project-form-col-3{
+    height: fit-content;
+    align-self: flex-end;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.project-form-col-3 button{
+    width: 100%;
+    padding: .4em 1.2em;
+    white-space: nowrap;
+    background: transparent;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 500;
+    position: relative;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.project-form-col-3 button:hover{
+    transform: translateY(-3px);
+}
+
+.project-form-col-3 button:first-child{
+    border: 1px solid var(--border-light);
+    color: var(--text-primary);
+}
+
+.project-form-col-3 button:last-child{
+    background-color: var(--warning);
+    border: 1px solid ;
+    color: var(--bg-secondary);
+}

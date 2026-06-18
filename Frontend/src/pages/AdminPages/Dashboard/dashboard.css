@@ -1,0 +1,217 @@
+.admin-dashboard{
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: var(--bg-primary);
+    padding: 2rem;
+}
+
+.admin-header{
+    width: 100%;
+    color: var(--text-primary);
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin-col-1 h2, h1{
+    font-weight: 500;
+}
+
+.admin-col-1 h1{
+    color: var(--warning);
+}
+
+.admin-col-1 p{
+    color: var(--text-secondary);
+}
+
+.admin-col-2{
+    display: flex;
+    gap: 1.6em;
+    align-items: center;
+    align-self: flex-start;
+}
+
+.admin-col-2 button{
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    border: 1px solid var(--border-primary);
+    outline: none;
+    border-radius: 50%;
+    font-size: 1.4em;
+    color: var(--text-primary);
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-col-2 button::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: var(--danger);
+    border-radius: 50%;
+    top: 5px;
+    left: 25px;
+}
+
+.admin-dashboard-content{
+    width: 100%;
+    min-height: 100vh;
+    padding: 2em 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.admin-dashboard-content .admin-progress-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+}
+
+.admin-dashboard-content .admin-progress-container .admin-card{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    width: 100%;
+    gap: 1em;
+    background-color: var(--bg-secondary);
+    padding: .1em 1em;
+    border: .5px solid var(--border-light);
+    border-radius: 5px;
+    color: var(--text-primary);
+}
+
+.admin-dashboard-content .admin-progress-container .admin-card i{
+    font-size: 2em;
+    color: var(--warning);
+    background-color: #f59f0b27;
+    padding: .4em;
+    border-radius: 5px;
+}
+
+.admin-dashboard-content .admin-progress-container .admin-card p{
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
+.project-track-container{
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 1em;
+}
+
+.project-track-container > div{
+    background-color: var(--bg-secondary);
+    border-radius: 5px;
+    border: 1px solid var(--border-light);
+    display: flex;
+}
+
+.recent-projects{
+    width: 100%;
+    aspect-ratio: 4/3;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: .5em;
+    overflow: scroll;
+}
+
+.recent-projects h3{
+    color: var(--text-primary);
+}
+
+.recent-projects a{
+    color: var(--warning);
+    text-decoration: none;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.recent-project-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recent-project-cards{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.recent-card{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    gap: 1em;
+}
+
+.recent-card img{
+    border-radius: 5px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.recent-card-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.recent-card-info-headers{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.recent-card-info-headers h5{
+    color: var(--text-primary);
+}
+
+.recent-card-info-headers h6{
+    color: var(--text-muted);
+}
+
+.recent-card-info-time{
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+.portfolio-view-graph{
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20px;
+
+    padding: 1rem;
+}
+
+.graph-header{
+    margin-bottom: 1rem;
+}
+
+.graph-header h3{
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    white-space: nowrap;
+}
+
+.graph-header small{
+    color: var(--warning);
+}

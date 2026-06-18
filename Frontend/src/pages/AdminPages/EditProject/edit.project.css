@@ -1,0 +1,224 @@
+.edit-project{
+    width: 100%;
+    min-height: 100vh;
+    padding: 1em;
+    background-color: var(--bg-primary);
+}
+
+.edit-project-header{
+    width: 100%;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+.edit-project-container{
+    width: 100%;
+    margin-top: 2em;
+}
+
+.back-to-manage{
+    position: relative;
+}
+
+.back-to-manage a{
+    text-decoration: none;
+    display: block;
+    color: var(--text-primary);
+    position: absolute;
+    transition: .3s ease;
+}
+
+.back-to-manage a:hover{
+    transform: translateX(-5px);
+}
+
+.edit-project-header-title h1{
+    color: var(--text-primary);
+}
+
+.edit-project-container form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 1em;
+}
+
+.common-edit-col{
+    width: 100%;
+    /* padding: 1em; */
+}
+
+.edit-project-col-1{
+    background-color: var(--bg-secondary);
+    border-radius: 5px;
+    border: 1px solid var(--border-light);
+    height: fit-content;
+    padding: 1em;
+}
+
+.edit-project-col-2{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+.common-edit-col-2{
+    width: 100%;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-light);
+    border-radius: 5px;
+}
+
+.edit-project-image-conatiner{
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-thumbnail-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 2em;
+    padding: 1em;
+}
+
+.edit-thumbnail-section img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.edit-thumbnail-section h2{
+    color: var(--text-primary);
+}
+
+.thumbnail-change-container{
+    width: 100%;
+}
+
+.edit-thumbnail-btns{
+    position: relative;
+    width: fit-content;
+    border: 1px solid var(--warning);
+    height: fit-content;
+    white-space: nowrap;
+    border-radius: 5px;
+    align-self: flex-end;
+    margin-bottom: .45em;
+    padding: .2em 1em;
+    color: var(--warning);
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.edit-thumbnail-btns label{
+    cursor: pointer;
+}
+
+.edit-thumbnail-btns:hover{
+    transform: translateY(-5px);
+}
+
+#change-thumbnail-btn{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.edit-gallery-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.edit-gallery-container{
+    width: 500px;
+    padding: 1em;
+    display: flex;
+    gap: 1em;
+    overflow-x: scroll;
+}
+
+.edit-gallery-card{
+    width: 100px;
+    height: 110px;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.edit-gallery-card img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+.add-gallery-container{
+    width: 100px;
+    height: 110px;
+    border: 1px dashed var(--border-light);
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    cursor: pointer;
+    color: var(--text-muted);
+}
+
+#add-gallery{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.edit-project-stat-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+}
+
+.edit-project-btn-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    gap: 1em;
+}
+
+.edit-project-btn-container button{
+    padding: .4em 1em;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    transition: .3s ease;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.edit-project-btn-container button:hover{
+    transform: translateY(-5px);
+}
+
+.edit-project-btn-container button:first-child{
+    border: 1px solid var(--warning);
+    color: var(--bg-secondary);
+    background-color: var(--warning);
+}
+
+.edit-project-btn-container button:last-child{
+    border: 1px solid var(--danger);
+    color: var(--danger);
+    background-color: transparent;
+}
