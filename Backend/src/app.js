@@ -14,8 +14,19 @@ app.use(express.urlencoded({ extended : true }));
 app.use(express.static('public'))
 app.use(cookieParser());
 
+const allowedOrigins = [
+    "http://localhost:5173",
+    "https://axel-3dr-portfolio.vercel.app"
+];
+
 app.use(cors({
-    origin: process.env.CLIENT_URL,
+    origin: function (origin, callback) {
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error("Not allowed by CORS"));
+        }
+    },
     credentials: true
 }));
 
