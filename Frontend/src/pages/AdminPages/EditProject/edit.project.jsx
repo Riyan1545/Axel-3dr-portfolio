@@ -234,35 +234,6 @@ const EditProject = () => {
     }
   };
 
-  const handleDelete = async () => {
-
-    const confirmed = window.confirm(
-      'Delete this project?'
-    );
-
-    if (!confirmed) return;
-
-    try {
-
-      setLoading(true);
-
-      await deleteProject(id);
-
-      navigate('/admin/manage-projects');
-
-    } catch (err) {
-
-      console.log(err);
-
-    } finally {
-
-      setLoading(false);
-
-      navigate('/admin/manage-projects')
-
-    }
-  };
-
   const descriptionIcon = [
     {
       i: 'ri-bold'
@@ -445,8 +416,6 @@ const EditProject = () => {
 
               <div className="edit-project-btn-container common-edit-col-2">
                 <button type='submit'>UPDATE PROJECT</button>
-
-                <button onClick={handleDelete}>DELETE PROJECT</button>
               </div>
             </div>
 

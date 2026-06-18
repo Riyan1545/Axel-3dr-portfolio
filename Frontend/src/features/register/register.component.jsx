@@ -262,7 +262,7 @@ const RegisterComponent = () => {
                         <div className="check-input">
                             <input type="checkbox" required />
 
-                            <label>I agree to the <Link target='_blank' to='/privacy' className='terms'>Privacy policy, </Link> <Link target='_blank' to='/terms-conditions' className='terms'>Terms & Conditions</Link></label>
+                            <label>I agree to the <Link to='/privacy' className='terms'>Privacy policy, </Link> <Link to='/terms-conditions' className='terms'>Terms & Conditions</Link></label>
                         </div>
 
                         <button

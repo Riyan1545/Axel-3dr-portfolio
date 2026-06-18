@@ -73,7 +73,7 @@ const CommonFooter = () => {
                             <div className="social-container">
                                 {socials.map((link) => {
                                     return (
-                                        <Link target='_blank' className='social' to={link.src}><i className={link.icon}></i></Link>
+                                        <Link className='social' to={link.src}><i className={link.icon}></i></Link>
                                     )
                                 })}
                             </div>
