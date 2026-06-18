@@ -75,7 +75,8 @@ const RegisterComponent = () => {
             navigate('/');
         } catch (err) {
 
-            console.error("REGISTER ERROR:", err);
+            console.log("REGISTER ERROR:", err);
+            console.log("RESPONSE:", err.response?.data);
 
             // Network error
             if (!err.response) {
@@ -96,6 +97,8 @@ const RegisterComponent = () => {
 
             // Form-related errors stay on the page
             if (status === 400 || status === 401 || status === 409) {
+                setLoading(false)
+                
                 err.response.data.message ||
                     'Registration failed.'
 
