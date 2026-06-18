@@ -48,8 +48,6 @@ const Dashboard = () => {
             try {
                 const data = await getDashboardAnalytics();
 
-                console.log("Analytics:", data);
-
                 setAnalytics(data);
             } catch (err) {
                 console.log(err);
