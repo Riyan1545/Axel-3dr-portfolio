@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import DashboardGraph from '../../../components/Admin/DashboardGraph';
+import DashboardGraph from '../../../components/Admin/DashboardGraph.jsx';
 import { getDashboardAnalytics } from '../../../services/project.service';
 import './dashboard.css';
 import { getProjects, getProjectStats, getRecentProjects } from '../../../services/project.service';
